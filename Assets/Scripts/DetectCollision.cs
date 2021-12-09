@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
 {
+    private AudioSource explosionSoundEffect;
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        explosionSoundEffect = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,10 +19,6 @@ public class DetectCollision : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        if (other.gameObject.CompareTag("Planet")) {
-            Destroy(other.gameObject); 
-        }
-        
+        if(other.gameObject.CompareTag("Planet") || other.gameObject.CompareTag("Sun")) { Destroy(gameObject); }
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlanetRotation : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed;
+    public float selfRotationSpeed;
     // Start is called before the first frame update
     GameObject sun;
     void Start()
@@ -16,5 +17,11 @@ public class PlanetRotation : MonoBehaviour
     void Update()
     {
         transform.RotateAround(sun.transform.position, Vector3.up, speed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, Time.deltaTime * selfRotationSpeed, 0));
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }

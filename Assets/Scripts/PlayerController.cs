@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private float pitch = 0.0f;
 
     public GameObject meteorPrefab;
+    private Rigidbody playerRb;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,15 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(meteorPrefab, transform.position, transform.rotation);
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("WHY NOT WORK");
+        playerRb = GetComponent<Rigidbody>();
+        Vector3 awayFromPlanet = transform.position - collision.gameObject.transform.position;
+        playerRb.AddForce(awayFromPlanet * 50, ForceMode.Impulse);
+        Debug.Log("Player collided with: " + collision.gameObject.name );
     }
 
 }
