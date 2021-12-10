@@ -168,7 +168,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92003436}
   m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
@@ -363,7 +363,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748095160}
   m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  planetShattered: {fileID: 0}
 --- !u!82 &748095167
 AudioSource:
   m_ObjectHideFlags: 0
@@ -534,7 +535,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748095160}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1000000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -706,7 +707,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021053157}
   m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -883,6 +884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  planetShattered: {fileID: 6580694605447253327, guid: a355b9ab47c7cb44aac3e38eca035c35,
+    type: 3}
 --- !u!54 &1021053165
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -891,7 +894,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021053157}
   serializedVersion: 2
-  m_Mass: 1.32
+  m_Mass: 100000
   m_Drag: 0
   m_AngularDrag: 1.63
   m_UseGravity: 1
@@ -1158,7 +1161,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901685250}
   m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1182,7 +1185,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 24b46c6ee4864b642aaacd07789ed1a2, type: 2}
+  - {fileID: 2100000, guid: 359af56a9468cd743a827abaa9c63268, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1225,6 +1228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  planetShattered: {fileID: 5217457899274841097, guid: 1593319d5b9a4f24ea56fb970eeb67dc,
+    type: 3}
 --- !u!82 &1901685257
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1329,7 +1334,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901685250}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1365,7 +1370,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030061668}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1396,7 +1401,7 @@ MeshRenderer:
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
+  m_ScaleInLightmap: 0.36
   m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
@@ -1640,7 +1645,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090056716}
   m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1721,6 +1726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  planetShattered: {fileID: 0}
 --- !u!82 &2090056723
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1825,7 +1831,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090056716}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1000000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -1892,7 +1898,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130072852}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1959,6 +1965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 0}
+  planetShattered: {fileID: 0}
 --- !u!82 &2130072859
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2063,7 +2070,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130072852}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1000000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0

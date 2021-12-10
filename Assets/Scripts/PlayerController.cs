@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
 
         yaw += sensitivity * Input.GetAxis("Mouse X");
         pitch -= sensitivity * Input.GetAxis("Mouse Y");
+       
+        pitch = Mathf.Clamp(pitch, -60f, 90f);
+        
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
 
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("WHY NOT WORK");
         playerRb = GetComponent<Rigidbody>();
         Vector3 awayFromPlanet = transform.position - collision.gameObject.transform.position;
-        playerRb.AddForce(awayFromPlanet * 50, ForceMode.Impulse);
+        //playerRb.AddForce(awayFromPlanet * 50, ForceMode.Force);
         Debug.Log("Player collided with: " + collision.gameObject.name );
     }
 
