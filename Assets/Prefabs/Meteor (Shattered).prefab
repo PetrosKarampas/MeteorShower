@@ -19562,7 +19562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6778301150725140136}
   m_Layer: 0
-  m_Name: MeteorShattered
+  m_Name: Meteor (Shattered)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

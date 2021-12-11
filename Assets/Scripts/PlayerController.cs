@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 20f;
+    private float yaw         = 0.0f;
+    private float speed       = 20f;
+    private float pitch       = 0.0f;
+    private float forcePower  = 10;
     private float sensitivity = 2f;
     private float horizontalInput;
     private float verticalInput;
-    private float yaw = 0.0f;
-    private float pitch = 0.0f;
 
     public GameObject meteorPrefab;
-    private Rigidbody playerRb;
+    private GameManager gameManager;
+    private Rigidbody playerRB;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        playerRB = GetComponent<Rigidbody>();
     }
     // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        verticalInput   = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
@@ -32,8 +35,12 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(Vector3.up * Time.deltaTime * speed);
         }
+        if (Input.GetKey(KeyCode.Z))
+        {
+            transform.Translate(Vector3.down * Time.deltaTime * speed);
+        }
 
-        yaw += sensitivity * Input.GetAxis("Mouse X");
+        yaw   += sensitivity * Input.GetAxis("Mouse X");
         pitch -= sensitivity * Input.GetAxis("Mouse Y");
        
         pitch = Mathf.Clamp(pitch, -60f, 90f);
@@ -49,11 +56,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("WHY NOT WORK");
-        playerRb = GetComponent<Rigidbody>();
-        Vector3 awayFromPlanet = transform.position - collision.gameObject.transform.position;
-        //playerRb.AddForce(awayFromPlanet * 50, ForceMode.Force);
-        Debug.Log("Player collided with: " + collision.gameObject.name );
+        if (collision.gameObject.CompareTag("Planet") || collision.gameObject.CompareTag("Sun"))
+        {
+            gameManager.UpdateScore(-3);
+            Debug.Log("Player collided with: " + collision.gameObject.name);
+            playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
+        }
     }
-
 }

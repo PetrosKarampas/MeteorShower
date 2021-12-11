@@ -4,36 +4,41 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
-    public Renderer rend;
+    private Renderer renderer;
+    private SphereCollider collider;
     private GameManager gameManager;
+    private AudioSource audio;
     public GameObject planetShattered;
-    // Start is called before the first frame update
+
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        rend = GetComponent<Renderer>();
-        rend.enabled = true;
+        renderer    = GetComponent<Renderer>();
+        collider    = GetComponent<SphereCollider>();
+        audio       = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
     private void OnTriggerEnter(Collider other)
     {
-        
         if (other.gameObject.CompareTag("Meteor"))
         {
-            var shatter = Instantiate(planetShattered, transform.position, transform.rotation);
-            gameManager.UpdateScore(5);
-            AudioSource audio = GetComponent<AudioSource>();
+            ExplodePlanet();
+            UpdateScore();
             audio.Play();
-            rend.enabled = false;
             Destroy(gameObject, audio.clip.length);
-            Destroy(shatter, 5);
         }
+    }
 
-        //Destroy(obj);
+    void ExplodePlanet() {
+        var shatter      = Instantiate(planetShattered, transform.position, transform.rotation);
+        renderer.enabled = false;
+        collider.enabled = false;
+        Destroy(shatter, 5);
+    }
+
+    void UpdateScore()
+    {
+        gameManager.UpdateScore(5);
     }
 
 }
