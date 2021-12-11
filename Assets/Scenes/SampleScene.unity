@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8401881fcb9afd34eb383fc90bbbbddc, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9f69d571a9cb54943b5a80ccd6b19e96, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -139,8 +139,9 @@ GameObject:
   - component: {fileID: 92003438}
   - component: {fileID: 92003437}
   - component: {fileID: 92003442}
+  - component: {fileID: 92003444}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,7 +168,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92003436}
-  m_Material: {fileID: 13400000, guid: 199d42fba08f0854d8fef7c19dd60eb3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -230,14 +231,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92003436}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 45, z: -100}
+  m_LocalRotation: {x: 0.17595722, y: -0, z: -0, w: 0.9843979}
+  m_LocalPosition: {x: 0, y: 36.5, z: -111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.269, y: 0, z: 0}
 --- !u!54 &92003442
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -247,13 +248,150 @@ Rigidbody:
   m_GameObject: {fileID: 92003436}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 5
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!20 &92003444
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92003436}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!1001 &163292173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 39.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449213652015559308, guid: 5f29eb40475b7064d864e1a8eb536fef,
+        type: 3}
+      propertyPath: m_Name
+      value: Jupiter Explosion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f29eb40475b7064d864e1a8eb536fef, type: 3}
 --- !u!1 &451093142
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +459,7 @@ GameObject:
   - component: {fileID: 748095167}
   - component: {fileID: 748095168}
   m_Layer: 0
-  m_Name: Planet 4
+  m_Name: Makemake
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +525,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 43ceb0b4b7a4f5d4da4cb70d494223dd, type: 2}
+  - {fileID: 2100000, guid: 6429b511442ceb54db7009fa0ef52f51, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,8 +567,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
-  planetShattered: {fileID: 0}
+  planetShattered: {fileID: 2808693784615232037, guid: 0cce37d6fd8e5744b856183894550767,
+    type: 3}
+  explosion: {fileID: 2190634632654734937, guid: 7724fbab8d907dc45918b9ae54d9faf5,
+    type: 3}
 --- !u!82 &748095167
 AudioSource:
   m_ObjectHideFlags: 0
@@ -441,7 +581,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ff93afe122ee4842bafd5bd6734713b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a66fbd0c143844f9d667d77d70fe21, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -536,7 +676,7 @@ Rigidbody:
   m_GameObject: {fileID: 748095160}
   serializedVersion: 2
   m_Mass: 1000000
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -590,6 +730,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -662,6 +803,24 @@ Transform:
   m_Father: {fileID: 92003441}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ee1c62c905bb24ea7c9cf3d9d40b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trauma: 0
+  _lastPosition: {x: 0, y: 0, z: 0}
+  _lastRotation: {x: 0, y: 0, z: 0}
+  TraumaExponent: 1
+  MaximumAngularShake: {x: 5, y: 5, z: 5}
+  MaximumTranslationShake: {x: 0.75, y: 0.75, z: 0.75}
 --- !u!1 &1021053157
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +838,7 @@ GameObject:
   - component: {fileID: 1021053163}
   - component: {fileID: 1021053165}
   m_Layer: 0
-  m_Name: Planet 1
+  m_Name: Earth
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +944,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ff93afe122ee4842bafd5bd6734713b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a66fbd0c143844f9d667d77d70fe21, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -883,8 +1042,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
   planetShattered: {fileID: 6580694605447253327, guid: a355b9ab47c7cb44aac3e38eca035c35,
+    type: 3}
+  explosion: {fileID: 4248795708374430695, guid: 2f59862a54375e040982fd8e8c6948c3,
     type: 3}
 --- !u!54 &1021053165
 Rigidbody:
@@ -895,12 +1055,12 @@ Rigidbody:
   m_GameObject: {fileID: 1021053157}
   serializedVersion: 2
   m_Mass: 100000
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 1.63
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &1094014195
 GameObject:
@@ -1119,7 +1279,7 @@ GameObject:
   - component: {fileID: 1901685257}
   - component: {fileID: 1901685258}
   m_Layer: 0
-  m_Name: Planet 3
+  m_Name: Neptune
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1227,8 +1387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
   planetShattered: {fileID: 5217457899274841097, guid: 1593319d5b9a4f24ea56fb970eeb67dc,
+    type: 3}
+  explosion: {fileID: 4507457063039879304, guid: 3562228733534a34f8636d73cd6ec21d,
     type: 3}
 --- !u!82 &1901685257
 AudioSource:
@@ -1240,7 +1401,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ff93afe122ee4842bafd5bd6734713b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a66fbd0c143844f9d667d77d70fe21, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1335,7 +1496,7 @@ Rigidbody:
   m_GameObject: {fileID: 1901685250}
   serializedVersion: 2
   m_Mass: 100000
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -1355,6 +1516,7 @@ GameObject:
   - component: {fileID: 2030061670}
   - component: {fileID: 2030061669}
   - component: {fileID: 2030061673}
+  - component: {fileID: 2030061674}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Sun
@@ -1449,7 +1611,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8018868, g: 0.49839804, b: 0.21560162, a: 1}
+  m_Color: {r: 0.8, g: 0.5390051, b: 0.21568628, a: 1}
   m_Intensity: 10
   m_Range: 10000
   m_SpotAngle: 30
@@ -1500,6 +1662,22 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!54 &2030061674
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030061668}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2037373578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1795,7 @@ GameObject:
   - component: {fileID: 2090056723}
   - component: {fileID: 2090056724}
   m_Layer: 0
-  m_Name: Planet 2
+  m_Name: Mars
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1725,8 +1903,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
-  planetShattered: {fileID: 0}
+  planetShattered: {fileID: 2003507474990938304, guid: 0ab111478459f5b42bedd980981d5b0b,
+    type: 3}
+  explosion: {fileID: 1692509843608192863, guid: 3bf45ffea8b0d7948963d0206c5805b7,
+    type: 3}
 --- !u!82 &2090056723
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1737,7 +1917,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ff93afe122ee4842bafd5bd6734713b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a66fbd0c143844f9d667d77d70fe21, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1832,7 +2012,7 @@ Rigidbody:
   m_GameObject: {fileID: 2090056716}
   serializedVersion: 2
   m_Mass: 1000000
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
@@ -1856,7 +2036,7 @@ GameObject:
   - component: {fileID: 2130072859}
   - component: {fileID: 2130072860}
   m_Layer: 0
-  m_Name: Planet 5
+  m_Name: Jupiter
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1964,8 +2144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rend: {fileID: 0}
-  planetShattered: {fileID: 0}
+  planetShattered: {fileID: 7245061822368420119, guid: df4995678f0bf0e4a849dde04cad88e6,
+    type: 3}
+  explosion: {fileID: 5449213652015559308, guid: 5f29eb40475b7064d864e1a8eb536fef,
+    type: 3}
 --- !u!82 &2130072859
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1976,7 +2158,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ff93afe122ee4842bafd5bd6734713b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e7a66fbd0c143844f9d667d77d70fe21, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2071,7 +2253,7 @@ Rigidbody:
   m_GameObject: {fileID: 2130072852}
   serializedVersion: 2
   m_Mass: 1000000
-  m_Drag: 0
+  m_Drag: 10
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0

@@ -9,6 +9,7 @@ public class Explode : MonoBehaviour
     private GameManager gameManager;
     private AudioSource audio;
     public GameObject planetShattered;
+    public GameObject explosion;
 
     void Start()
     {
@@ -31,9 +32,11 @@ public class Explode : MonoBehaviour
 
     void ExplodePlanet() {
         var shatter      = Instantiate(planetShattered, transform.position, transform.rotation);
+        var explosionfx = Instantiate(explosion, transform.position, transform.rotation);
         renderer.enabled = false;
         collider.enabled = false;
-        Destroy(shatter, 5);
+        Destroy(explosionfx, 7);
+        Destroy(shatter, 7);
     }
 
     void UpdateScore()
