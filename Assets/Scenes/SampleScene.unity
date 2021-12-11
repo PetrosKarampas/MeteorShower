@@ -298,100 +298,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1001 &163292173
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: InitialModule.startSize.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: InitialModule.startSizeY.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5286721009794895358, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: InitialModule.startSizeZ.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.88
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -37.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5445717251139545856, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5449213652015559308, guid: 5f29eb40475b7064d864e1a8eb536fef,
-        type: 3}
-      propertyPath: m_Name
-      value: Jupiter Explosion
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5f29eb40475b7064d864e1a8eb536fef, type: 3}
 --- !u!1 &451093142
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetShattered: {fileID: 2808693784615232037, guid: 0cce37d6fd8e5744b856183894550767,
     type: 3}
-  explosion: {fileID: 2190634632654734937, guid: 7724fbab8d907dc45918b9ae54d9faf5,
+  explosion: {fileID: 2687204271998397272, guid: 69a300350aba4bf4db1a3baddfbaa1da,
     type: 3}
 --- !u!82 &748095167
 AudioSource:
@@ -1044,7 +950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetShattered: {fileID: 6580694605447253327, guid: a355b9ab47c7cb44aac3e38eca035c35,
     type: 3}
-  explosion: {fileID: 4248795708374430695, guid: 2f59862a54375e040982fd8e8c6948c3,
+  explosion: {fileID: 2947362151420356499, guid: 767764e7df31f444091cfc1509454436,
     type: 3}
 --- !u!54 &1021053165
 Rigidbody:
@@ -1389,7 +1295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetShattered: {fileID: 5217457899274841097, guid: 1593319d5b9a4f24ea56fb970eeb67dc,
     type: 3}
-  explosion: {fileID: 4507457063039879304, guid: 3562228733534a34f8636d73cd6ec21d,
+  explosion: {fileID: 6941568453359217127, guid: ba177d5d620b432459e817308837e2d5,
     type: 3}
 --- !u!82 &1901685257
 AudioSource:
@@ -1905,7 +1811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetShattered: {fileID: 2003507474990938304, guid: 0ab111478459f5b42bedd980981d5b0b,
     type: 3}
-  explosion: {fileID: 1692509843608192863, guid: 3bf45ffea8b0d7948963d0206c5805b7,
+  explosion: {fileID: 1159143658360200374, guid: 8f6934dba4585b649aaf13bd3840939c,
     type: 3}
 --- !u!82 &2090056723
 AudioSource:
@@ -2146,7 +2052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetShattered: {fileID: 7245061822368420119, guid: df4995678f0bf0e4a849dde04cad88e6,
     type: 3}
-  explosion: {fileID: 5449213652015559308, guid: 5f29eb40475b7064d864e1a8eb536fef,
+  explosion: {fileID: 2020616982254061763, guid: 6499bf7d3fb67ec45ae8db37147cd6e9,
     type: 3}
 --- !u!82 &2130072859
 AudioSource:

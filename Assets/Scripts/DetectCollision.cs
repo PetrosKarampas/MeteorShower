@@ -6,17 +6,6 @@ public class DetectCollision : MonoBehaviour
 {
     public GameObject MeteorShattered;
    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Planet")) 
@@ -27,7 +16,7 @@ public class DetectCollision : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Sun"))
         {
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 0.4f);
         }
     }
 }
