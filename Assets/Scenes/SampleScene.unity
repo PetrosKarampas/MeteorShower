@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 2808693784615232037, guid: 0cce37d6fd8e5744b856183894550767,
+  planetShattered: {fileID: 3080706583742652720, guid: b3dd6c94eca34034c90d7b8564a25802,
     type: 3}
   explosion: {fileID: 2687204271998397272, guid: 69a300350aba4bf4db1a3baddfbaa1da,
     type: 3}
@@ -721,12 +721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ee1c62c905bb24ea7c9cf3d9d40b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _trauma: 0
-  _lastPosition: {x: 0, y: 0, z: 0}
-  _lastRotation: {x: 0, y: 0, z: 0}
-  TraumaExponent: 1
-  MaximumAngularShake: {x: 5, y: 5, z: 5}
-  MaximumTranslationShake: {x: 0.75, y: 0.75, z: 0.75}
 --- !u!1 &1021053157
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 6580694605447253327, guid: a355b9ab47c7cb44aac3e38eca035c35,
+  planetShattered: {fileID: 2893644975574978698, guid: 611fe50fd6cd7ac4eb5730b6fe1b86b1,
     type: 3}
   explosion: {fileID: 2947362151420356499, guid: 767764e7df31f444091cfc1509454436,
     type: 3}
@@ -1293,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 5217457899274841097, guid: 1593319d5b9a4f24ea56fb970eeb67dc,
+  planetShattered: {fileID: 7486591929727542690, guid: 0d424025d79051a439ca2dab2f180b21,
     type: 3}
   explosion: {fileID: 6941568453359217127, guid: ba177d5d620b432459e817308837e2d5,
     type: 3}
@@ -1809,7 +1803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 2003507474990938304, guid: 0ab111478459f5b42bedd980981d5b0b,
+  planetShattered: {fileID: 7105561733150101844, guid: 54410c155b10f854095485b60998b490,
     type: 3}
   explosion: {fileID: 1159143658360200374, guid: 8f6934dba4585b649aaf13bd3840939c,
     type: 3}
@@ -2050,7 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 7245061822368420119, guid: df4995678f0bf0e4a849dde04cad88e6,
+  planetShattered: {fileID: 2121795948726723286, guid: cbbb052015f5d934090e9fdcb25fb07c,
     type: 3}
   explosion: {fileID: 2020616982254061763, guid: 6499bf7d3fb67ec45ae8db37147cd6e9,
     type: 3}
