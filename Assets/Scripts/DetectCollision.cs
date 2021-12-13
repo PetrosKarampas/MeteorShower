@@ -16,7 +16,7 @@ public class DetectCollision : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Sun"))
         {
-            Destroy(gameObject, 0.4f);
+            Destroy(gameObject, 0.1f);
         }
     }
 }

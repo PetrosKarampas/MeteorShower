@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Planet
+  - Sun
+  - Meteor
+  - Planet Shard
   layers:
   - Default
   - TransparentFX

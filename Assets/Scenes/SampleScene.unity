@@ -473,9 +473,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 3080706583742652720, guid: b3dd6c94eca34034c90d7b8564a25802,
+  planetShattered: {fileID: 1211995562063151407, guid: b3dd6c94eca34034c90d7b8564a25802,
     type: 3}
   explosion: {fileID: 2687204271998397272, guid: 69a300350aba4bf4db1a3baddfbaa1da,
+    type: 3}
+  shardExplosion: {fileID: 5429671967554749103, guid: 9bfb4c1d8fb5e564780443482d89fd93,
     type: 3}
 --- !u!82 &748095167
 AudioSource:
@@ -942,9 +944,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 2893644975574978698, guid: 611fe50fd6cd7ac4eb5730b6fe1b86b1,
+  planetShattered: {fileID: 5013300664470212664, guid: 611fe50fd6cd7ac4eb5730b6fe1b86b1,
     type: 3}
   explosion: {fileID: 2947362151420356499, guid: 767764e7df31f444091cfc1509454436,
+    type: 3}
+  shardExplosion: {fileID: 5429671967554749103, guid: 9bfb4c1d8fb5e564780443482d89fd93,
     type: 3}
 --- !u!54 &1021053165
 Rigidbody:
@@ -1287,9 +1291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 7486591929727542690, guid: 0d424025d79051a439ca2dab2f180b21,
+  planetShattered: {fileID: 7206832607703562831, guid: 9f696f9d59cad224da790ce31a5c5ebb,
     type: 3}
-  explosion: {fileID: 6941568453359217127, guid: ba177d5d620b432459e817308837e2d5,
+  explosion: {fileID: 8926001380977189598, guid: ba177d5d620b432459e817308837e2d5,
+    type: 3}
+  shardExplosion: {fileID: 5429671967554749103, guid: 9bfb4c1d8fb5e564780443482d89fd93,
     type: 3}
 --- !u!82 &1901685257
 AudioSource:
@@ -1417,6 +1423,7 @@ GameObject:
   - component: {fileID: 2030061669}
   - component: {fileID: 2030061673}
   - component: {fileID: 2030061674}
+  - component: {fileID: 2030061675}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Sun
@@ -1578,6 +1585,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2030061675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030061668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111665c107bf1f54fb711dd09bbafde8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shardExplosionFX: {fileID: 3358429538094375867, guid: a82e4394d95c32c41b505b6891aed483,
+    type: 3}
 --- !u!1 &2037373578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,9 +1824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 7105561733150101844, guid: 54410c155b10f854095485b60998b490,
+  planetShattered: {fileID: 1478512711397097527, guid: 54410c155b10f854095485b60998b490,
     type: 3}
   explosion: {fileID: 1159143658360200374, guid: 8f6934dba4585b649aaf13bd3840939c,
+    type: 3}
+  shardExplosion: {fileID: 5429671967554749103, guid: 9bfb4c1d8fb5e564780443482d89fd93,
     type: 3}
 --- !u!82 &2090056723
 AudioSource:
@@ -2044,9 +2067,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 2121795948726723286, guid: cbbb052015f5d934090e9fdcb25fb07c,
+  planetShattered: {fileID: 606621756341418415, guid: cbbb052015f5d934090e9fdcb25fb07c,
     type: 3}
   explosion: {fileID: 2020616982254061763, guid: 6499bf7d3fb67ec45ae8db37147cd6e9,
+    type: 3}
+  shardExplosion: {fileID: 5429671967554749103, guid: 9bfb4c1d8fb5e564780443482d89fd93,
     type: 3}
 --- !u!82 &2130072859
 AudioSource:
