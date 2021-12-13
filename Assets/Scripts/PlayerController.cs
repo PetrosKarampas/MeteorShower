@@ -64,5 +64,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player collided with: " + collision.gameObject.name);
             playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
         }
+        if (collision.gameObject.CompareTag("Sun"))
+        {
+            Debug.Log("Player collided with: " + collision.gameObject.name);
+            playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
+        }
     }
 }
