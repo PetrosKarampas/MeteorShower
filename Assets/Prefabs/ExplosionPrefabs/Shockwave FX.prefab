@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6190506627416771630}
   - component: {fileID: -7867854020207292695}
   m_Layer: 0
-  m_Name: Shockwave
+  m_Name: Shockwave FX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
