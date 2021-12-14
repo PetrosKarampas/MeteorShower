@@ -944,7 +944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327be2dede2e53b44a76a80656c9dc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetShattered: {fileID: 5013300664470212664, guid: 611fe50fd6cd7ac4eb5730b6fe1b86b1,
+  planetShattered: {fileID: 1452737479499074787, guid: 611fe50fd6cd7ac4eb5730b6fe1b86b1,
     type: 3}
   explosion: {fileID: 2947362151420356499, guid: 767764e7df31f444091cfc1509454436,
     type: 3}

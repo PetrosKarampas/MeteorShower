@@ -8,16 +8,19 @@ public class Explode : MonoBehaviour
     private SphereCollider collider;
     private GameManager gameManager;
     private AudioSource audio;
+    private Light light;
     public GameObject planetShattered;
     public GameObject explosion;
     public GameObject shardExplosion;
+    
 
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         renderer    = GetComponent<Renderer>();
         collider    = GetComponent<SphereCollider>();
-        audio = GetComponent<AudioSource>();
+        audio       = GetComponent<AudioSource>();
+        light       = GetComponent<Light>();
     }
 
     private void OnTriggerEnter(Collider other)

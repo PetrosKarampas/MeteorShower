@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9001ba565a8a8418ef145766442fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeteorShattered: {fileID: 4425578596615034844, guid: 47c3857311564b04fbd2ea55ad6118d1,
+  MeteorShattered: {fileID: 7190058260407865417, guid: 7435ed2cef3781740ac7cbd36d450ab6,
     type: 3}
 --- !u!54 &-4347121873969784572
 Rigidbody:

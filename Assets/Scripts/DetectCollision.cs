@@ -11,6 +11,7 @@ public class DetectCollision : MonoBehaviour
         if(other.gameObject.CompareTag("Planet")) 
         {
             var obj = Instantiate(MeteorShattered, transform.position, transform.rotation);
+            obj.gameObject.transform.localScale = transform.localScale/2f;
             Destroy(gameObject);
             Destroy(obj, 5);
         }
