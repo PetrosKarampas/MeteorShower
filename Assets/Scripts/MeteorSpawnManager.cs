@@ -7,8 +7,9 @@ public class MeteorSpawnManager : MonoBehaviour
     private float scale;
     void Start()
     {
-        scale = Random.Range(1.0f, 5.0f);
+        scale = Random.Range(2.0f, 10.0f);
         transform.localScale = new Vector3(scale, scale, scale);
+        Debug.Log("Scale: " + transform.localScale);
     }
 
 }
