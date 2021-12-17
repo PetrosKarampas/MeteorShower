@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private float yaw         = 0.0f;
     private float speed       = 20f;
     private float pitch       = 0.0f;
-    private float forcePower  = 10;
+    private float forcePower  = 15;
     private float sensitivity = 2f;
     private float horizontalInput;
     private float verticalInput;
@@ -15,14 +15,14 @@ public class PlayerController : MonoBehaviour
     public GameObject meteorPrefab;
     private GameManager gameManager;
     private Rigidbody playerRB;
+    private AudioSource collisionWithPlanet;
 
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Confined;
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        playerRB = GetComponent<Rigidbody>();
+        gameManager         = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        playerRB            = GetComponent<Rigidbody>();
+        collisionWithPlanet = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -62,12 +62,24 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.UpdateScore(-3);
             Debug.Log("Player collided with: " + collision.gameObject.name);
-            playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
+
+            if (collision.gameObject.name.Equals("Earth"))
+            {
+                playerRB.AddForce((transform.position - collision.transform.position) * forcePower * 5, ForceMode.Impulse);
+            }
+            else
+            { 
+                playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
+             
+            }
+            collisionWithPlanet.Play();
         }
+        
         if (collision.gameObject.CompareTag("Sun"))
         {
             Debug.Log("Player collided with: " + collision.gameObject.name);
             playerRB.AddForce((transform.position - collision.transform.position) * forcePower, ForceMode.Impulse);
+            collisionWithPlanet.Play();
         }
     }
 }

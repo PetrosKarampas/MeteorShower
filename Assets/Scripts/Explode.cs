@@ -17,10 +17,10 @@ public class Explode : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        renderer    = GetComponent<Renderer>();
-        collider    = GetComponent<SphereCollider>();
-        audio       = GetComponent<AudioSource>();
-        light       = GetComponent<Light>();
+        renderer = GetComponent<Renderer>();
+        collider = GetComponent<SphereCollider>();
+        audio = GetComponent<AudioSource>();
+        light = GetComponent<Light>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,9 +42,10 @@ public class Explode : MonoBehaviour
         }
     }
 
-    void ExplodePlanet() {
-        var shatter      = Instantiate(planetShattered, transform.position, transform.rotation);
-        var explosionfx  = Instantiate(explosion, transform.position, transform.rotation);
+    void ExplodePlanet() 
+    {
+        var shatter  = Instantiate(planetShattered, transform.position, transform.rotation);
+        var explosionfx = Instantiate(explosion, transform.position, transform.rotation);
         audio.Play();
         renderer.enabled = false;
         collider.enabled = false;
