@@ -5,16 +5,23 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public List<GameObject> target;
     public TextMeshProUGUI scoreText;
     private int score;
-    // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1024, 768, false, 60);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
         score = 0;
         scoreText.text = "Score: " + score;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
     public void UpdateScore(int scoreToAdd)
     {

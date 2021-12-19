@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveForward : MonoBehaviour
 {
     
-    public float speed = 100f;
+    private float speed = 70f;
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);

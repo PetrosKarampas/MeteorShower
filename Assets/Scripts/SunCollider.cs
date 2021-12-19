@@ -5,7 +5,6 @@ using UnityEngine;
 public class SunCollider : MonoBehaviour
 {
     public GameObject shardExplosionFX;
-    // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Planet Shard"))

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetRotation : MonoBehaviour
+public class PlanetRotator : MonoBehaviour
 {
     public float speed;
     public float selfRotationSpeed;
@@ -18,10 +18,5 @@ public class PlanetRotation : MonoBehaviour
     {
         transform.RotateAround(sun.transform.position, Vector3.up, speed * Time.deltaTime);
         transform.Rotate(new Vector3(0, Time.deltaTime * selfRotationSpeed, 0));
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
     }
 }
