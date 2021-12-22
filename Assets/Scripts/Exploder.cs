@@ -11,6 +11,7 @@ public class Exploder : MonoBehaviour
     public GameObject planetShattered;
     public GameObject explosion;
     public GameObject shardExplosion;
+    public int pointValue;
     
 
     void Start()
@@ -64,7 +65,10 @@ public class Exploder : MonoBehaviour
 
     void UpdateScore()
     {
-        gameManager.UpdateScore(5);
+        gameManager.RemovePlanet(gameObject);
+        gameManager.UpdateScore(pointValue);
     }
+    
+
 
 }

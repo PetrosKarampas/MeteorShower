@@ -8,6 +8,7 @@ public class CollisionDetector : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
+        // If meteor collides with a planet destroy meteor and instantiate the shattered meteor
         if(other.gameObject.CompareTag("Planet")) 
         {
             var obj = Instantiate(MeteorShattered, transform.position, transform.rotation);
@@ -15,7 +16,8 @@ public class CollisionDetector : MonoBehaviour
             Destroy(gameObject);
             Destroy(obj, 5);
         }
-        if (other.gameObject.CompareTag("Sun"))
+        // If meteor colllides with the sun just destroy the meteor
+        if(other.gameObject.CompareTag("Sun"))
         {
             Destroy(gameObject, 0.1f);
         }

@@ -17,42 +17,42 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRB;
     private AudioSource collisionWithPlanet;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         playerRB = GetComponent<Rigidbody>();
         collisionWithPlanet = GetComponent<AudioSource>();
     }
-    // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
-
-        if (Input.GetKey(KeyCode.Q))
+        if (gameManager.isGameActive)
         {
-            transform.Translate(Vector3.up * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.Z))
-        {
-            transform.Translate(Vector3.down * Time.deltaTime * speed);
-        }
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
 
-        yaw   += sensitivity * Input.GetAxis("Mouse X");
-        pitch -= sensitivity * Input.GetAxis("Mouse Y");
-       
-        pitch = Mathf.Clamp(pitch, -90f, 90f);
-        
+            transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+            transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
 
-        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+            if (Input.GetKey(KeyCode.Q))
+            {
+                transform.Translate(Vector3.up * Time.deltaTime * speed);
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                transform.Translate(Vector3.down * Time.deltaTime * speed);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(meteorPrefab, transform.position, transform.rotation);
+            yaw += sensitivity * Input.GetAxis("Mouse X");
+            pitch -= sensitivity * Input.GetAxis("Mouse Y");
+
+            pitch = Mathf.Clamp(pitch, -90f, 90f);
+            transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(meteorPrefab, transform.position, transform.rotation);
+            }
         }
     }
 

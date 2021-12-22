@@ -8,7 +8,6 @@ public class DestroyOutOfBounds : MonoBehaviour
     private float bound = 350;
     void Update()
     {
-        //if an object goes past the player's view remove that object
         if (transform.position.x > bound || transform.position.y > bound || transform.position.z > bound)
         {
             Destroy(gameObject);

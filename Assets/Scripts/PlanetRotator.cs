@@ -6,14 +6,12 @@ public class PlanetRotator : MonoBehaviour
 {
     public float speed;
     public float selfRotationSpeed;
-    // Start is called before the first frame update
     GameObject sun;
     void Start()
     {
         sun = GameObject.Find("Sun");
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.RotateAround(sun.transform.position, Vector3.up, speed * Time.deltaTime);
