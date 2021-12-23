@@ -7,3 +7,4 @@ Unity Version: 2020.3.25f1
 - Camera: Mouse
 ## Build and Run
 You can build and play this game using the Unity Hub.
+Just download this project and load it in the Unity Hub. 
