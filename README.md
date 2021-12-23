@@ -5,5 +5,5 @@ Unity Version: 2020.3.25f1
 - Move: W, A, S, D, Q, Z
 - Shoot: Space
 - Camera: Mouse
-## Build
+## Build and Run
 You can build this project using the Unity Hub.
