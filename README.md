@@ -6,5 +6,4 @@ Unity Version: 2020.3.25f1
 - Shoot: Space
 - Camera: Mouse
 ## Build and Run
-You can build this project using the Unity Hub.
-<button name="button" onclick="http://www.google.com">Click me</button>
+You can build and play this game using the Unity Hub.
