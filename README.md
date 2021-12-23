@@ -6,5 +6,5 @@ Unity Version: 2020.3.25f1
 - Shoot: Space
 - Camera: Mouse
 ## Build and Run
-You can build and play this game using the Unity Hub.
+You can build and play this game using the Unity Hub.<br />
 Just download this project and load it in the Unity Hub. 
