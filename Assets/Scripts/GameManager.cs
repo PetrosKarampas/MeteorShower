@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public List<GameObject> planets;
     public bool isGameActive;
     private int score;
+
     void Start()
     {
         isGameActive = false;
@@ -53,6 +54,7 @@ public class GameManager : MonoBehaviour
     {
         planets.Remove(planet);
     }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -73,6 +75,4 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-
-
 }

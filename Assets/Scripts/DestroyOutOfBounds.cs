@@ -6,6 +6,7 @@ public class DestroyOutOfBounds : MonoBehaviour
 {
 
     private float bound = 350;
+
     void Update()
     {
         if (transform.position.x > bound || transform.position.y > bound || transform.position.z > bound)

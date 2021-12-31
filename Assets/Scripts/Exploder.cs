@@ -13,7 +13,6 @@ public class Exploder : MonoBehaviour
     public GameObject shardExplosion;
     public int pointValue;
     
-
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -68,7 +67,4 @@ public class Exploder : MonoBehaviour
         gameManager.RemovePlanet(gameObject);
         gameManager.UpdateScore(pointValue);
     }
-    
-
-
 }

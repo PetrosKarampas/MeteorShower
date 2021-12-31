@@ -17,13 +17,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRB;
     private AudioSource collisionWithPlanet;
 
-    
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         playerRB = GetComponent<Rigidbody>();
         collisionWithPlanet = GetComponent<AudioSource>();
     }
+
     void Update()
     {
         if (gameManager.isGameActive)

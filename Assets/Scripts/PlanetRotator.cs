@@ -6,7 +6,8 @@ public class PlanetRotator : MonoBehaviour
 {
     public float speed;
     public float selfRotationSpeed;
-    GameObject sun;
+    private GameObject sun;
+
     void Start()
     {
         sun = GameObject.Find("Sun");
