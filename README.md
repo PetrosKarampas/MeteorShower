@@ -6,4 +6,4 @@ Unity Version: 2020.3.25f1
 - Shoot: Space
 - Camera: Mouse
 ## Build and Run
-You can build and play this game using the Unity Hub.
+You can build and play this game using the Unity Hub or you can unzip the game build included in the repository and run **Meteor Shower.exe**.
