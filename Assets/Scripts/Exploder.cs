@@ -12,7 +12,7 @@ public class Exploder : MonoBehaviour
     public GameObject explosion;
     public GameObject shardExplosion;
     public int pointValue;
-    
+
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
@@ -48,7 +48,6 @@ public class Exploder : MonoBehaviour
         Destroy(gameObject, 7);
         Destroy(explosionfx, 7);
         Destroy(shatter, 7);
-        
     }
 
     void ExplodeShard(Collision shard)
