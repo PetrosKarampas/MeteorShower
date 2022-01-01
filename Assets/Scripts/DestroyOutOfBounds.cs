@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-
     private float bound = 350;
 
     void Update()
