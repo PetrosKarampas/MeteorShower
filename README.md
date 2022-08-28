@@ -1,5 +1,7 @@
 ![MeteorShower](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/MeteorShower.png)
 <p align="left">
+    <img width="200" src="[http://material-bread.org/logo-shadow.svg](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif)"
+</p>
   ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif)</p> <p align="right">  ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif1.gif)</p>
 
 This mini-game was developed for the computer graphics course @cs.uoi.gr. Made in Unity.<br />
