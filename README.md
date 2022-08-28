@@ -1,5 +1,5 @@
 ![MeteorShower](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/MeteorShower.png)
-![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/MSgif1.gif) ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/MSgif2.gif)
+![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif) ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif1.gif)
 This mini-game was developed for the computer graphics course @cs.uoi.gr. Made in Unity.<br />
 Unity Version: 2020.3.25f1
 ## Controls
