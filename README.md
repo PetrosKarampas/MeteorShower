@@ -3,6 +3,7 @@
   <img src="https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif?raw=true" alt="Sublime's custom image"/>
   <img src="https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif1.gif?raw=true" alt="Sublime's custom image"/>
 </p>
+
 This mini-game was developed for the computer graphics course @cs.uoi.gr. Made in Unity.<br />
 Unity Version: 2020.3.25f1
 ## Controls
