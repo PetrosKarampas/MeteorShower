@@ -1,7 +1,5 @@
 ![MeteorShower](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/MeteorShower.png)
-<p align="center">
-  <img src="[demo.gif](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif)" alt="animated" />
-</p>
+
 ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif.gif)
 ![](https://github.com/PetrosKarampas/MeteorShower/blob/main/Assets/Images/gif1.gif)
 
